@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="John Doe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>KB</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Webáruház</h1>
+      </header>
+      <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Kezdőlap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="merettablazat.html">Mérettáblázat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="admin.html">Admin</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <article class="row">
+        <aside class="col-lg-2">
+          <p class="bold">Keresési feltételek</p>
+          <p>A termék neve:</p>
+          <input type="text" class="in" placeholder="A termék neve" />
+          <div class="slidecontainer">
+            <p>Szűrés ár szerint:</p>
+            <input type="range" min="0" max="6990" value="50" class="slider" />
+          </div>
+        </aside>
+        <section class="col-lg-8 row">
+          <table class="table table-striped">
+            <tr>
+              <th>Méret</th>
+              <th>Szélesség</th>
+              <th>Hossz</th>
+            </tr>
+            <tr>
+              <td>S</td>
+              <td>50cm</td>
+              <td>69cm</td>
+            </tr>
+            <tr>
+              <td>M</td>
+              <td>55cm</td>
+              <td>74cm</td>
+            </tr>
+            <tr>
+              <td>L</td>
+              <td>70cm</td>
+              <td>80cm</td>
+            </tr>
+            <tr>
+              <td>XL</td>
+              <td>80cm</td>
+              <td>90cm</td>
+            </tr>
+            <tr>
+              <td>XXL</td>
+              <td>95cm</td>
+              <td>91cm</td>
+            </tr>
+            <tr>
+              <td>3XL</td>
+              <td>100cm</td>
+              <td>100cm</td>
+            </tr>
+          </table>
+        </section>
+        
+
+          <aside>
+            <h3>Kapcsolódó cikkek 1</h3>
+  
+            <div class="col-lg-2">
+              <p>
+                1. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos quibusdam 
+              </p>
+              <p>
+                2. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos quibusdam quasi quam! Dicta ipsum incidunt at, commodi
+                saepe, distinctio aut debitis sit, repellendus 
+              </p>
+              <p>
+                3. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos quibusdam quasi quam! 
+              </p>
+              <h3>Kapcsolódó cikkek 1</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Necessitatibus aspernatur laborum ut asperiores maiores quos numquam
+                itaque, consectetur odio ab esse eaque quisquam saepe aperiam. Fugit
+                illo similique quam! Aliquid . elit. Necessitatibus aspernatur
+                laborum ut asperiores maiores quos numquam itaque, consectetur odio
+                ab esse eaque quisquam saepe aperiam. elit. Necessitatibus
+                aspernatur laborum ut asperiores maiores quos numquam itaque,
+                consectetur odio ab esse eaque quisquam saepe aperiam.lorem
+              </p>
+            </div>
+          </aside>
+      </article>
+      <footer class="text-center"><h5>Képiró Balázs</h5></footer>
+    </main>
+  </body>
+</html>
