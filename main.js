@@ -1,22 +1,42 @@
 import { termekLista } from "./adatlista.js"
-function weboldal_letrehozas(){
+import { szuresNevSzerint } from "./fuggvenyek.js"
+init(termekLista)
+
+function init(lista) {
+  let txt = weboldal_letrehozas(lista);
+
+}
+
+function weboldal_letrehozas(lista){
     const termekekHTML = $(".termekek")
     let i=0
-    termekLista.forEach((element,id) => {
-        termekekHTML.append(`<div class="card termek${id}">`)
-        termekekHTML.append(`<div class="card">`)
-        termekekHTML.append(`<img src="${termekLista[id].img}" alt="polo" />`)
-        termekekHTML.append(`<h1>${termekLista[id].nev} </h1>`)
-        termekekHTML.append(`<h3>${termekLista[id].ar} </h3>`)
-        termekekHTML.append(`<div class="btn btn-primary btn-block termek${id}">
+    let txt =""
+    lista.forEach((element,id) => {
+        txt +=(`<div class="card termek${id}">`)
+        txt +=(`<div class="card">`)
+        txt +=(`<img src="${lista[id].img}" alt="polo" />`)
+        txt +=(`<h1>${lista[id].nev} </h1>`)
+        txt +=(`<h3 class=ar${id}>${lista[id].ar} </h3>`)
+        txt +=(`<div class="btn btn-primary btn-block termek${id}">
         <p>kosárba</p>
       </div>`)
-        
-        termekekHTML.append(`</div">`)
-        termekekHTML.append(`</div">`)
+      
+        txt +=(`</div>`)
+        txt +=(`</div>`)
     });
+    termekekHTML.html(txt)
     
 }
 
-weboldal_letrehozas()
+
+function nevSzuresEsemeny(lista) {
+  const szuroELEM = $(".in");
+  szuroELEM.on("keyup", function () {
+    let szuroSZoveg = szuroELEM.val();
+    const LISTA = szuresNevSzerint(lista, szuroSZoveg);
+    console.log(LISTA)
+    init(LISTA)
+  });
+}
+nevSzuresEsemeny(termekLista)
 
