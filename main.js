@@ -1,13 +1,23 @@
 import { termekLista } from "./adatlista.js";
 import { szortirozasArSzerint, szuresNevSzerint } from "./fuggvenyek.js";
 init(termekLista);
+
+
+
+
+
 function init(lista) {
   const arSzerintHTML = $(".arSzerint");
   let txt = weboldal_letrehozas();
   weboldal_megjelenites(txt)
   szuresKattintasra(termekLista,arSzerintHTML)
   console.log("🦀")
+  nevSzuresEsemeny(termekLista)
 }
+
+
+
+
 function weboldal_megjelenites(txt){
   const termekekHTML=$(".termekek")
   termekekHTML.html(txt)
@@ -41,7 +51,7 @@ function nevSzuresEsemeny(lista) {
     init(LISTA);
   });
 }
-nevSzuresEsemeny(termekLista);
+
 
 function szuresKattintasra(lista, htmlElem) {
   htmlElem.on("click", function () {
