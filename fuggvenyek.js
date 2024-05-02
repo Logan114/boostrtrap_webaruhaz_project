@@ -22,14 +22,4 @@ export function szuresNevSzerint(lista, szurtSzoveg) {
         return SZURTLiSTA;
       }
 
-export function szortirozasArSzerint(lista){
-  lista.sort(function(a,b){
-    if(a.ar<b.ar){
-      return 1
-    }
-    else{
-      return -1 
-    }
-  })
-}
 
