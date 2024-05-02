@@ -1,10 +1,10 @@
 import { termekLista } from "./adatlista.js";
 import { szuresNevSzerint, szortirozasArSzerint } from "./fuggvenyek.js";
-init(termekLista);
 let kosarLista = [ ]
-nevSzuresEsemeny(termekLista);
 const arSzerintHTML = $(".arSzerint");
 const nevSzerintHTML = $(".nevSzerint")
+init(termekLista);
+nevSzuresEsemeny(termekLista);
 szuresKattintasra(termekLista, arSzerintHTML);
 
 function init(lista) {
