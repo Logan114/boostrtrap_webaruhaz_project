@@ -6,12 +6,8 @@
     <meta name="keywords" content="Póló, Vicces póló" />
     <meta name="author" content="John Doe" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script type="module" src="main.js"></script>
     <title>KB</title>
@@ -45,14 +41,29 @@
             <p>Szűrés ár szerint:</p>
             <input type="range" min="0" max="6990" value="50" class="slider" />
           </div>
+          <div class="dropdown">
+            <button
+              type="button"
+              class="btn btn-primary dropdown-toggle"
+              data-bs-toggle="dropdown"
+            >
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item nevSzerint" href="#">Név szerint</a>
+              </li>
+              <li>
+                <a class="dropdown-item arSzerint" href="#">Ár szerint</a>
+              </li>
+            </ul>
+          </div>
+          <button type="button" class="crab">szortirozás</button>
         </aside>
         <section class="col-lg-8 row">
-          
-        <div class="termekek">
-
-        </div>
+          <div class="termekek"></div>
         </section>
-        <aside  class="col-lg-2">
+        <aside class="col-lg-2">
           <h3>Kapcsolódó cikkek 1</h3>
 
           <div>
@@ -79,7 +90,7 @@
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Necessitatibus aspernatur laborum ut asperiores maiores quos numquam
             itaque, consectetur odio ab esse eaque quisquam saepe aperiam. Fugit
-            illo similique quam! Aliquid . elit. Necessitatibus aspernatur
+            illo similique quam! Aliquid . elit. Neasidecessitatibus aspernatur
             laborum ut asperiores maiores quos numquam itaque, consectetur odio
             ab esse eaque quisquam saepe aperiam. elit. Necessitatibus
             aspernatur laborum ut asperiores maiores quos numquam itaque,
