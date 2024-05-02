@@ -26,5 +26,16 @@ export function szortirozasArSzerint(lista) {
       return 1;
     }
   });
-  console.log(lista)
+  return lista}
+
+export function szortirozasNevSzerint(lista){
+  lista.sort(function(a,b){
+    if (a.nev < b.nev) {
+      return -1
+    }
+    else {
+      return 1
+    }
+  })
+  return lista
 }
