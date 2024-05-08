@@ -39,3 +39,11 @@ export function szortirozasNevSzerint(lista){
   })
   return lista
 }
+export function kosarListaEltarolas(){}
+export function kosarListaEloszedes(){
+  const storedKosarLista = localStorage.getItem('kosarLista');
+  if (storedKosarLista){
+    const kosarLista=JSON.parse(storedKosarLista)
+    console.log(kosarLista)
+  }
+}
