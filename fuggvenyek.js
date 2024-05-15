@@ -8,6 +8,11 @@ export function kereses(lista) {
     });
   });
 }
+export function weboldal_megjelenites(txt,modositandoHTML) {
+  const modositandoHTML = $(".termekek");
+  modositandoHTML.html(txt);
+}
+
 
 export function szuresNevSzerint(lista, szurtSzoveg) {
   /* szurtLista - a szűrőbe írt szó alaján kilistázza azokat az adatokat a listából, amelyekben szerepel a név mezőjében az adott szó.  */
@@ -45,5 +50,8 @@ export function kosarListaEloszedes(){
   if (storedKosarLista){
     const kosarLista=JSON.parse(storedKosarLista)
     console.log(kosarLista)
+    return kosarLista
+
   }
+  else{console.log("Nincs tárolt kosár")}
 }

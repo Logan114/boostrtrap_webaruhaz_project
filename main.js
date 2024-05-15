@@ -24,7 +24,7 @@ function init(lista) {
   weboldal_megjelenites(txt);
 }
 
-function weboldal_megjelenites(txt) {
+function weboldal_megjelenites(txt,`.termekek`) {
   const termekekHTML = $(".termekek");
   termekekHTML.html(txt);
 }
@@ -45,12 +45,11 @@ function weboldal_letrehozas(lista) {
 
 function nevSzuresEsemeny(lista) {
   const szuroELEM = $(".in");
-  szuroELEM.on("keyup", function () {
-    let szuroSZoveg = szuroELEM.val();
+  ffffZoveg = szuroELEM.val();
     const szurtLista = szuresNevSzerint(lista, szuroSZoveg);
     init(szurtLista);
-  });
-}
+  };
+
 
 function szuresKattintasra(lista, arszerintGomb,nevszerintGomb) {
   arszerintGomb.on("click", function () {
