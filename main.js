@@ -6,9 +6,9 @@ let kosarLista = JSON.parse(localStorage.getItem("kosarLista")) || [];
 const arSzerintHTML = $(".arSzerint");
 const nevSzerintHTML = $(".nevSzerint");
 
-window.kosarba = function(id) {
-  kosarLista.push(id);
-  console.log(id);
+window.kosarba = function(tsz) {
+  kosarLista.push(tsz);
+  console.log(tsz);
   console.log(kosarLista);
   localStorage.setItem("kosarLista", JSON.stringify(kosarLista));
 }
@@ -34,9 +34,10 @@ function weboldal_letrehozas(lista) {
     txt += `<div class="card col-lg-4 termek${id}">`;
     txt += `<img src="${termek.img}" alt="polo" />`;
     txt += `<h1>${termek.nev} </h1>`;
-    txt += `<h3 class="ar${id}">${termek.ar}Ft </h3>`;
-    txt += `<button type="button" class="btn btn-primary btn-block termek${id} kosar" onclick="kosarba(${id})"> Kosárba</button>`;
+    txt += `<h3 class="ar${termekLista[id].szam}">${termek.ar}Ft </h3>`;
+    txt += `<button type="button" class="btn btn-primary btn-block termek${termekLista[id].szam} kosar" onclick="kosarba(${termekLista[id].szam})"> Kosárba</button>`;
     txt += `</div>`;
+    console.log(termekLista[id].szam)
   });
   return txt;
 }

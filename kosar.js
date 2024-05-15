@@ -13,9 +13,9 @@ function kosarTartalma(idLista){
         //termekLista[id].ar =+ vegosszeg
         //console.log(vegosszeg) jó ezt majd a ChatGPT megoldja
         txt += `<div class="card col-lg-4 termek${id}">`;
-        txt += `<img src="${termek.img}" alt="polo" />`;
-        txt += `<h1>${termek.nev} </h1>`;
-        txt += `<h3 class="ar${id}">${termek.ar}Ft </h3>`;
+        txt += `<img src="${termekLista[id].img}" alt="polo" />`;
+        txt += `<h1>${termekLista[id].nev} </h1>`;
+        txt += `<h3 class="ar${id}">${termekLista[id].ar}Ft </h3>`;
         txt += `<button type="button" class="btn btn-primary btn-block termek${id} kosar" onclick="kosarba(${id})"> Kosárba</button>`;
         txt += `</div>`;
         
