@@ -9,7 +9,7 @@ export function kereses(lista) {
   });
 }
 export function weboldal_megjelenites(txt,modositandoHTML) {
-  const modositandoHTML = $(".termekek");
+  modositandoHTML = $(".termekek");
   modositandoHTML.html(txt);
 }
 
